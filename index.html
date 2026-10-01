@@ -144,6 +144,20 @@
 
           <div class="col-lg-6 pt-3 pt-lg-0 content">
             <h3><img src="assets/img/e.png"width="200" height="40" alt="" /> <i>Log</i><i><b style='color:red;'>R</b></i></h3>
+			  <p><script>
+          const now = new Date();
+          const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          const dayName = daysOfWeek[now.getDay()];
+          const months = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+          ];
+          const monthName = months[now.getMonth()];
+          const day = now.getDate();
+          const year = now.getFullYear();
+
+          document.write(dayName + ", " + monthName + " " + day + ", " + year + ".");
+        </script></p>
             <p class="font-italic">
               The Honda LogR™ app is designed to help Type R drivers achieve significant improvements in lap times in a closed-course setting.
             </p>
@@ -471,19 +485,8 @@
                 <title></title>
               </head>
               <body>
-                
-               
-                <h2 id="displayDateTime"></h2>
+                <h2 style="font-family:courier;"><i style="color:red;">R</i>-45896</h2>
               </body>
-                <script type="text/javascript">
-                var today = new Date();
-                var day = today.getDay();
-                var daylist = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];                
-                var date = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear()+'.';
-                var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-                var dateTime = date;                 
-                document.getElementById("displayDateTime").innerHTML = dateTime + ' <br>   ' + daylist[day];              
-                </script>
               </html></p>
               
           </div>
